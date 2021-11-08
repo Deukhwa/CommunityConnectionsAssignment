@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pizza Order</title>
+  </head>
+  <body>
+    <h1>Pizza Order Form</h1>
+    <form action="order" method="POST">
+      <h2>Select Size</h2>
+      <input type="radio" name="size" id="small" value="small" /><label
+        for="small"
+        >Small</label
+      ><br />
+      <input type="radio" name="size" id="medium" value="medium" /><label
+        for="medium"
+        >Medium</label
+      ><br />
+      <input type="radio" name="size" id="large" value="large" /><label
+        for="large"
+        >Large</label
+      ><br />
+
+      <h2>Select Toppings</h2>
+      <input type="checkbox" name="toppings" id="pepperoni" value="pepperoni" />
+      <lable>Pepperoni</lable>
+      <br />
+      <input type="checkbox" name="toppings" id="mushroom" value="mushroom" />
+      <lable>Mushroom</lable>
+      <br />
+      <input type="checkbox" name="toppings" id="onions" value="onions" />
+      <lable>Onions</lable>
+      <br />
+      <input type="checkbox" name="toppings" id="olives" value="olives" />
+      <lable>Olives</lable>
+      <br />
+
+      <input type="submit" value="order pizza" />
+    </form>
+  </body>
+</html>
