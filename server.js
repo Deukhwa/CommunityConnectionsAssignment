@@ -13,13 +13,13 @@ app.use(express.urlencoded({ extended: true }))
 app.use(express.json())
 
 app.get('/', (req, res) => {
-  const arr = [1, 2, 3, 4, 5]
+  const arr = [1, 2, 3, 4, 5, 6, 7]
   res.render('index', arr)
 })
 
 app.post('/order', (req, res) => {
   const pizzaOrder = req.body
-  console.log(pizzaOrder)
+  console.log('This is changed for some reason')
   res.render('pizza', pizzaOrder)
 })
 
